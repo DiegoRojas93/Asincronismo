@@ -46,3 +46,25 @@ En ella vamos a pedir la siguiente informacion Utilizando Callbacks, Promise y A
 ### Respuesta del servidor
 
 [![](https://github.com/DiegoRojas93/Asincronismo/blob/Asincronismo/images/2.png)](https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp)
+
+----
+
+## Callback
+
+Es una función que se pasa a otra función como un argumento o parametro de ella, que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción.
+
+```
+function date(callback){
+  console.log(new Date);
+  setTimeout(()=>{
+    let date = new Date
+    callback(date)
+  },3000)
+}
+
+function printDate(dateNow){
+  console.log(dateNow);
+}
+
+date(printDate)
+```

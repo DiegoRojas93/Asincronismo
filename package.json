@@ -1,0 +1,24 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "Trabajando con los Asincronismos en JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "callback": "node src/callback/Estructura.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoRojas93/Asincronismo.git"
+  },
+  "keywords": [
+    "Callbacks",
+    "Promise",
+    "Async"
+  ],
+  "author": "Diego Rojas <diegorojas431@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiegoRojas93/Asincronismo/issues"
+  },
+  "homepage": "https://github.com/DiegoRojas93/Asincronismo#readme"
+}
