@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "callback": "node src/callback/Estructura.js",
-    "callback:challenge": "node src/callback/Challenge.js"
+    "callback:challenge": "node src/callback/Challenge.js",
+    "promise": "node src/promise/Estructura.js"
   },
   "repository": {
     "type": "git",

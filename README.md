@@ -68,3 +68,35 @@ function printDate(dateNow){
 
 date(printDate)
 ```
+
+----
+## Promise
+
+Una Promise (promesa en castellano) es un objeto devuelto al cuál se adjuntan funciones callback, en lugar de pasar callbacks a una función. Una promesa  representa la terminación o el fracaso de una operación asíncrona.
+
+```
+const algoVaASuceder = () => {
+  return new Promise((resolve, reject) => {
+    if (true){
+      resolve('Hey!');
+    }else{
+      reject(`Uppsss!`)
+    }
+  })
+}
+
+algoVaASuceder()
+  .then(response => console.log(response))
+  .catch(err => console.log(err))
+```
+
+###### Conceptos
+
+- resolve: resolver/resuelta
+- reject: rechazar/rechazada
+
+- .then: .entonces
+- .catch: .captura
+
+- response: respuesta
+- err: error
