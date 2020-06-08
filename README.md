@@ -12,3 +12,15 @@
 **API:** Es una interfaz de programación de aplicaciones (del inglés API: Application Programming Interface).
 
 En simples palabras nos permite consumir contenido de internet, como los personajes de la serie animada o también hay APIs preparadas para guardar información, actualizar o eliminar (CRUD).
+
+----
+
+### Asincronismo
+
+JavaScript por default siempre corre una tarea a la vez a esto se le llama ***Sincronismo.***
+
+Dentro del entorno del runtime el avegador nos ofrece cierqas API's y funcionalidades que permite recibir aquellas funciones que no le corresponden  trabajar al Call Stack y que solamente puede trabajar ellas mismas.
+
+Cuando las web API's termina de realizar las tares, las deja ya listas en el Callback Queue (cola de mensaje) para que cuando el Call Stack se acabe, ***Event Loop*** se de cuenta de ello y ponga todas las funciones del callback queue al Call Stack
+
+![1.png](https://github.com/DiegoRojas93/Asincronismo/blob/Asincronismo/images/1.png)
