@@ -24,3 +24,25 @@ Dentro del entorno del runtime el avegador nos ofrece cierqas API's y funcionali
 Cuando las web API's termina de realizar las tares, las deja ya listas en el Callback Queue (cola de mensaje) para que cuando el Call Stack se acabe, ***Event Loop*** se de cuenta de ello y ponga todas las funciones del callback queue al Call Stack
 
 ![1.png](https://github.com/DiegoRojas93/Asincronismo/blob/Asincronismo/images/1.png)
+
+----
+
+### Presentación del reto
+
+Vamos a consumir la Api de [Rick And Morty](https://rickandmortyapi.com/)
+
+`https://rickandmortyapi.com/api/`
+
+En ella vamos a pedir la siguiente informacion Utilizando Callbacks, Promise y Asinc/await:
+
+- Obtener la cantidad de personajes que tiene la serie
+- Obneter el nombre del 1er personaje
+- Obtener la dimencion la cual pertenece el personaje
+
+**XMLHttprequest:** es un objeto que esta adentro de javascript la cual permite hacer peticiones a un servicio a la nube, en este caso a la API.Para empezar con el curso hay que instalar la sigiente dependencia en nuestro teminal detro de la carpeta del proyecto.
+
+`npm install xmlhttprequest --save-dev`
+
+### Respuesta del servidor
+
+[![](https://github.com/DiegoRojas93/Asincronismo/blob/Asincronismo/images/2.png)](https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp)
