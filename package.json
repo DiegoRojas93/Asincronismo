@@ -4,7 +4,8 @@
   "description": "Trabajando con los Asincronismos en JavaScript",
   "main": "src/index.js",
   "scripts": {
-    "callback": "node src/callback/Estructura.js"
+    "callback": "node src/callback/Estructura.js",
+    "callback:challenge": "node src/callback/Challenge.js"
   },
   "repository": {
     "type": "git",
