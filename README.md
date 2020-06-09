@@ -70,6 +70,7 @@ date(printDate)
 ```
 
 ----
+
 ## Promise
 
 Una Promise (promesa en castellano) es un objeto devuelto al cuál se adjuntan funciones callback, en lugar de pasar callbacks a una función. Una promesa  representa la terminación o el fracaso de una operación asíncrona.
@@ -129,3 +130,32 @@ console.log(`Before_1`);
 anotherFunction()
 console.log(`After_1`);
 ```
+
+----
+
+# Conclusiones
+
+**CALL BACK**
+
+| ***Ventajas***  | ***Desventajas***  |
+| :------------: | :------------: |
+| Corre facilmente en cualquier navegador (**Viejos ó Nuevos**) | Peticiones anidadas (**Callback Hell**) |
+| | Dificil de leer y entender |
+| | Flujo poco intuitivo |
+| | El manejo de error se vuelve tedioso |
+
+**PROMESAS**
+
+| ***Ventajas***  | ***Desventajas***  |
+| :------------: | :------------: |
+| Facilmente enlazables | No maneja excepciones, solo tiene un catch al final |
+| Gran capacidad de trabajar con el asincronismo | Propenso a errores si no se retorna el siguiente llamado |
+| Facil de leer y entender | Es necesario transpilarlo por medio de Babel para que funcione en todos los navegadores (**Viejos ó Nuevos**) |
+
+**ASYNC AWAY**
+
+| ***Ventajas***  | ***Desventajas***  |
+| :------------: | :------------: |
+| Se maneja el try catch | Es necesario transpilar para que funcine en todos los navegadoresEs necesario transpilarlo por medio de Babel para que funcione en todos los navegadores (**Viejos ó Nuevos**) |
+| Son mas facil de leer y entender |  |
+| Es necesario esperar a que halgo suceda |  |
