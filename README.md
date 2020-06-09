@@ -100,3 +100,32 @@ algoVaASuceder()
 
 - response: respuesta
 - err: error
+
+----
+
+## Async/await
+
+Async/await fue implementada en el ES8 del 2017; su finalidad es simplificar el comportamiento de las promesas. En ella ustiliza las palabras reservadas de **Async** y **await** logrando que nuestra funcion se comporte de manera sincrona.
+
+```
+const doSomeThingAsync = () => {
+  return new Promise ((resolve, reject) => {
+    (true)
+      ? setTimeout(() => resolve (`Do Something Async`), 3000)
+      : reject (new Error (`Test Error`))
+  })
+}
+
+const anotherFunction = async () => {
+  try{
+    const someThing = await doSomeThingAsync()
+    console.log(someThing);
+  }catch{
+    console.error(error);
+  }
+}
+
+console.log(`Before_1`);
+anotherFunction()
+console.log(`After_1`);
+```
